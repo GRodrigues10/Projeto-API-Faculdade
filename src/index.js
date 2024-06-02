@@ -37,7 +37,7 @@ app.put("/:id", async (req, res) =>{
             descrição: req.body.descrição,
             imagem_url: req.body.imagem_url,
             trailer_url: req.body.trailer_url
-        }, { new: true }); // { new: true } retorna o documento atualizado
+        }, { new: true });
 
         if (!série) {
             return res.status(404).send({ error: 'Série não encontrada' });
