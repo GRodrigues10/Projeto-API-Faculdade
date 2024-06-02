@@ -6,7 +6,6 @@ app.use(express.json())
 const port = 3000;
 
 const Séries = mongoose.model('Séries',{
-    
     título: String,
     descrição: String,
     imagem_url: String,
